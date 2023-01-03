@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+  width: 100%;
+  height: 80px;
+  background-color: #DDE0BC;
+  display: flex;
+  
+}
+
+header .contenedorBrand{
+  width: 20%;
+  height: 100%;
+}
+
+header .contenedorItemList{
+  width: 60%;
+  height: 100%;
+}
+
+header .contenedorCart{
+  width: 20%;
+  height: 100%;
+}
+
+header img {
+  width: 150px;
+  height: 100%;
+}
+
+
+.contenedorItemList ul{
+  list-style: none;
+  display: flex;
+  margin: 15px;
+  justify-content: flex-end;
+}
+
+.contenedorItemList ul li {
+  margin: 10px;
+  font-family: sans-serif; 
+  
+}
+
+
+header .contenedorCart{
+  width: 10%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+  
+}
+
+.contenedorCart .contenedor{
+  display: flex;
+  width: 10%;
+  justify-content: flex-end;
+}
