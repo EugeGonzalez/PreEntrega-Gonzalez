@@ -1,4 +1,4 @@
-import brand from "../img/bothfit.png";
+import brand from "../img/logo.png";
 
 const Brand = () => {
     return (
