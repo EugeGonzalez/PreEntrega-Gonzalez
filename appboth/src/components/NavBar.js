@@ -3,6 +3,8 @@ import CartWidget from "./CartWidget";
 import ItemListContainer from "./ItemsListContainer";
 
 const NavBar = () => {
+
+    const isNav = true
     return(
         <header>
             <div className="contenedorBrand">
@@ -10,9 +12,12 @@ const NavBar = () => {
             </div>
 
             <nav className="contenedorItemList">
-               <ItemListContainer
+               
+               <ItemListContainer isNav={isNav}
                productos= "Productos"
-               nosotros= "Nosotros"
+               herramientas= "Herramientas"
+               maquinas= "Maquinas"
+
                />
             </nav>
 

@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+html , body , #root  {
+  height: 100%;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 header{
   width: 100%;
@@ -25,12 +35,12 @@ header .contenedorBrand{
 header .contenedorItemList{
   width: 60%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:end;
 }
 
-header .contenedorCart{
-  width: 20%;
-  height: 100%;
-}
+
 
 header img {
   width: 120px;
@@ -54,6 +64,7 @@ header img {
 
 header .contenedorCart{
   width: 10%;
+  height: 100%;
   display: flex;
   justify-content: center;
   color: white;
@@ -76,3 +87,19 @@ header .contenedorCart{
  
 }
 
+main {
+  flex-grow: 1;
+  padding: 0.5rem;
+  height: 500px;
+}
+
+footer {
+  background-color: #262527;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 30px;
+}
