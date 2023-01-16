@@ -1,9 +1,0 @@
-    
-    [ 
-    {"id": 1, "nombre": "530 Peine cola jaguar", "precio": 850, "cantidad": 1, "categoria": "herramientas", "img":"appboth/src/img/peine-jaguar.jpg"},
-    {"id": 2, "nombre": "Fitball", "precio": 1500, "cantidad": 1,"img":"./galeria/fitball-gimnasio.jpg"},
-    {"id": 3, "nombre": "Trx",  "precio": 1850, "cantidad": 1,"img":"./galeria/trx-gimnasio.jpg"},
-    {"id": 4, "nombre": "Banco plano",  "precio": 25000, "cantidad": 1,"img":"./galeria/banco-gimnasio.jpg"},
-    {"id": 5, "nombre": "Rueda abdominal",  "precio": 1000,"cantidad": 1, "img":"./galeria/rueda-abdominal-gimnasio.jpg"}
-]
-

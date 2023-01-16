@@ -6,7 +6,7 @@ const ItemListContainer = (props) => {
     const [productos,setProductos] = useState([])
     
     useEffect(() => {
-        const pedido = fetch('appboth/src/productos.json')
+        const pedido = fetch('../productos.json')
 
         pedido
         .then((respuesta) => {
@@ -56,5 +56,4 @@ const ItemListContainer = (props) => {
 }
 
 export default ItemListContainer;
-
 
