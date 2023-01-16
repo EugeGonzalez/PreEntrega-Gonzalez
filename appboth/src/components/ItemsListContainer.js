@@ -1,5 +1,31 @@
+import { useEffect, useState } from "react"
+import ItemList from "./ItemList"
+
 const ItemListContainer = (props) => {
     const {isNav} = props
+    const [productos,setProductos] = useState([])
+    
+    useEffect(() => {
+        const pedido = fetch('appboth/src/productos.json')
+
+        pedido
+        .then((respuesta) => {
+            const productos = respuesta.json()
+            return productos
+
+        })
+        .then((productos) => {
+            
+            setProductos(productos)
+            
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+
+    }, [])
+
+    
 
     if(isNav){
     return (
@@ -18,10 +44,13 @@ const ItemListContainer = (props) => {
     )}
 
     else{
+        
         return(
-            <div>
-                <p>hola main</p>
-            </div>
+            
+           <div>
+            <ItemList productos={productos}/>
+            
+           </div>
         )
     }
 }
