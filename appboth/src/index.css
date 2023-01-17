@@ -103,3 +103,39 @@ footer {
   flex-direction: column;
   height: 30px;
 }
+
+.contenedorProducto{
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+
+.imagenProducto{
+  width: 50%;
+}
+
+
+.divPro{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.precioProducto{
+  font-family: sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nombreProducto{
+  font-family: sans-serif;
+  font-size:1.2rem;
+  
+}
+
+.imagenDesc{
+  width: 18rem;
+}

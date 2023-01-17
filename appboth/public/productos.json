@@ -1,7 +1,7 @@
     
     [ 
-    {"id": 1, "nombre": "530 Peine cola jaguar", "precio": 850, "cantidad": 1, "categoria": "herramientas", "img":"../images/peine-jaguar.jpg"},
-    {"id": 2, "nombre": "Activador de Rizos Rulos y Ondas x250 ml Top Finish Primont", "precio": 1700, "categoria": "productos", "cantidad": 1,"img":"../images/producto.jpg"}
+    {"id": 1, "nombre": "530 Peine cola jaguar", "precio": 850, "cantidad": 1, "categoria": "herramientas", "img":"../images/peine-jaguar.jpg", "descripcion":"Peine de Corte con Cola de Plastico A690 Jaguar Medidas: 8.25=21.0 cm Línea de peines profesionales iónica de plástico de alta calidad, compuesta por 9 modelos diferentes. Los iones ayudan al cabello a absorber humedad y le dan un brillo sano y cuidado. El redondeado adicional de las púas cuida el cabello y el cuero cabelludo. Todos los modelos son antiestáticos, resistentes al calor y los productos químicos"},
+    {"id": 2, "nombre": "Activador de Rizos Rulos y Ondas x250 ml Top Finish Primont", "precio": 1700, "categoria": "productos", "cantidad": 1,"img":"../images/producto.jpg", "descripcion":"Activador de rulos y ondas en cabellos naturales o permanentados."}
     
 ]
 

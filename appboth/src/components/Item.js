@@ -2,10 +2,12 @@
 
 const Item = ({ producto }) => {
     return (
-        <article key={producto.id}>
-            <h3>{producto.nombre}</h3>
-            <img src={producto.img} alt={producto.img} />
-            <p>{producto.precio}</p>
+        <article className="contenedorProducto card" key={producto.id}>
+            <img className="imagenProducto" src={producto.img} alt={producto.img} />
+            <p className="precioProducto">${producto.precio}</p>
+            <h3 className="nombreProducto">{producto.nombre}</h3>
+            
+           
             {<Link to={"/item/"+producto.id}>ver mas</Link> }
         </article>
     )
