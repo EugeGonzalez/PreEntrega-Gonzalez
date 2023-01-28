@@ -1,11 +1,10 @@
 import Brand from "./Brand";
 import { NavLink } from "react-router-dom"
 import CartWidget from "./CartWidget";
-import ItemListContainer from "./ItemsListContainer";
+
 
 const NavBar = () => {
 
-    const isNav = true
     return(
         <header>
             
@@ -16,19 +15,22 @@ const NavBar = () => {
             </NavLink>
             </div>
 
-           
-
             <nav className="contenedorItemList">
                
-               <ItemListContainer isNav={isNav}
-               productos= "Productos"
-               herramientas= "Herramientas"
-               maquinas= "Maquinas"
-
-               />
+            <ul>
+                <li className="nav-item">
+                   <NavLink to='/productos/productos'  className="nav-link active" aria-current="page" >Productos</NavLink >
+                </li>
+                <li className="nav-item">
+                    <NavLink to='/productos/herramientas' className="nav-link active" aria-current="page" >Herramientas</NavLink >
+                </li>
+                <li className="nav-item">
+                    <NavLink to='/productos/maquinas' className="nav-link active" aria-current="page" >Maquinas</NavLink >
+                </li>
+            </ul>
+            
             </nav>
 
-            
 
             <div className="contenedorCart">
                 <CartWidget/>

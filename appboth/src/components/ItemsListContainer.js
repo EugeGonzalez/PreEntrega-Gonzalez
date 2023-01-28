@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react"
 import ItemList from "./ItemList"
 
-const ItemListContainer = (props) => {
-    const {isNav} = props
+const ItemListContainer = () => {
     const [productos,setProductos] = useState([])
     
     useEffect(() => {
@@ -27,23 +26,7 @@ const ItemListContainer = (props) => {
 
     
 
-    if(isNav){
-    return (
-
-            <ul>
-                <li className="nav-item">
-                   <a className="nav-link active" aria-current="page" href="#">{props.productos}</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">{props.herramientas}</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">{props.maquinas}</a>
-                </li>
-            </ul>
-    )}
-
-    else{
+    
         
         return(
             
@@ -52,8 +35,7 @@ const ItemListContainer = (props) => {
             
            </div>
         )
-    }
+    
 }
 
 export default ItemListContainer;
-
