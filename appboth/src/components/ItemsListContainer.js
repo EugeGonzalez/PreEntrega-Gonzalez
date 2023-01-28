@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 import ItemList from "./ItemList"
 import { useParams } from "react-router-dom"
+import Carrusel from './Carrusel'
 const ItemListContainer = () => {
     const [productos,setProductos] = useState([])
     const {categoria}= useParams()
-    
     useEffect(() => {
         const pedido = fetch('../productos.json')
         pedido
@@ -31,8 +31,8 @@ const ItemListContainer = () => {
     
         
         return(
-            
            <div>
+           {!categoria && <Carrusel/>}
             <ItemList productos={productos}/>
             
            </div>
